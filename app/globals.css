@@ -5,7 +5,8 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --color-apd-header: 0, 0, 0;
-  --apd-main-bg: #282828;
+  --apd-main-bg: #151515;
+  --color-apd-secondary-text: #ad0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,10 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--apd-main-bg);
+}
+
+.apd-main {
+  height: calc(100dvh - 56px);
 }
 
 @layer utilities {

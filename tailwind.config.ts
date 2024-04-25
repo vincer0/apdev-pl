@@ -13,8 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundColor: {
+        secondary: "var(--color-apd-secondary-text)",
+      },
       colors: {
         header: "rgb(var(--color-apd-header))",
+        secondaryText: "var(--color-apd-secondary-text)",
       },
     },
   },
