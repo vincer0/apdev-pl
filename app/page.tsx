@@ -1,9 +1,12 @@
-import { Header } from "./components";
+import { Header, Main, HeroSection, SideMenu } from "./components";
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex p-24 max-w-screen-xl mx-auto">hello</main>
+      <Main>
+        <HeroSection />
+      </Main>
+      <SideMenu />
     </>
   );
 }

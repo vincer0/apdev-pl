@@ -1,3 +1,12 @@
-export default function Main() {
-  return <main className="flex p-24 max-w-screen-xl mx-auto">hello</main>;
+import React from "react";
+
+interface IProps {
+  children: React.ReactNode;
+}
+export default function Main({ children }: IProps) {
+  return (
+    <main className="p-4 sm:p-24 max-w-screen-xl mx-auto apd-main">
+      <>{children}</>
+    </main>
+  );
 }
