@@ -1,4 +1,4 @@
-import { Header, Main, HeroSection, SideMenu } from "./components";
+import { Header, Main, HeroSection, SideMenu } from "../components";
 export default function Home() {
   return (
     <>
