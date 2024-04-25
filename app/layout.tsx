@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { inter } from "@/app/fonts";
+import "animate.css";
 import "./globals.css";
 
 export const metadata: Metadata = {

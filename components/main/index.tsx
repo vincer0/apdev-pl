@@ -5,7 +5,7 @@ interface IProps {
 }
 export default function Main({ children }: IProps) {
   return (
-    <main className="p-4 sm:p-24 max-w-screen-xl mx-auto apd-main">
+    <main className="p-4 sm:p-24 max-w-screen-xl mx-auto">
       <>{children}</>
     </main>
   );

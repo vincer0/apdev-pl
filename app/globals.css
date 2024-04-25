@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes scaleText {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --color-apd-header: 0, 0, 0;
@@ -17,13 +26,22 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--apd-main-bg);
 }
 
-.apd-main {
+.apd-hero {
   height: calc(100dvh - 56px);
+}
+
+.bouncy-link:hover {
+  animation: scaleText 0.2s;
+  animation-fill-mode: forwards;
 }
 
 @layer utilities {

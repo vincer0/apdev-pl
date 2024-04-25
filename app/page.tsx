@@ -5,6 +5,7 @@ export default function Home() {
       <Header />
       <Main>
         <HeroSection />
+        <div id="about-me">About Me</div>
       </Main>
       <SideMenu />
     </>
