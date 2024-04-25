@@ -10,7 +10,7 @@ export default function Header() {
       >
         <div>
           <span className="font-bold text-2xl">APDEV.PL</span>
-          <span className="ml-2">Adam Pasierb</span>
+          <span className="ml-2 hidden sm:inline">Adam Pasierb</span>
         </div>
         <div className="flex gap-6">
           <ExternalLink href="https://www.github.com" icon={<Github />} />
