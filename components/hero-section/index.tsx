@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="apd-hero flex flex-col">
       <div>
         <p className="text-xl sm:text-3xl font-thin">Hello,</p>
-        <h1 className="text-3xl sm:text-6xl font-bold my-2">I'm Adam</h1>
+        <h1 className="text-3xl sm:text-6xl font-bold my-2">I&apos;m Adam</h1>
         <h3 className="text-xl sm:text-3xl font-thin">
           <span className="text-secondaryText">{`<front-end />`}</span>
           developer
