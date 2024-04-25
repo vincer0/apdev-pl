@@ -1,6 +1,12 @@
+import ExternalLink from "../external-link";
+import { Github, LinkedIn, Mail } from "../icons";
+
 export default function SideMenu() {
   return (
-    <div className="fixed bottom-0 flex flex-col sm:left-[50px] xl:left-[100px] hidden sm:block">
+    <div className="hidden fixed bottom-0 sm:flex flex-col justify-center items-center gap-8 sm:left-[50px] xl:left-[100px]">
+      <ExternalLink href="https://www.github.com" icon={<Github />} />
+      <ExternalLink href="https://www.linkedin.com" icon={<LinkedIn />} />
+      <ExternalLink href="mailto:dev.adam.pasierb@gmail.com" icon={<Mail />} />
       <div className="bg-secondaryText w-[1px] h-52"></div>
     </div>
   );
