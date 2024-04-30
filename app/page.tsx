@@ -1,11 +1,11 @@
-import { Header, Main, HeroSection, SideMenu } from "../components";
+import { Header, Main, HeroSection, SideMenu, AboutMe } from "../components";
 export default function Home() {
   return (
     <>
       <Header />
       <Main>
         <HeroSection />
-        <div id="about-me">About Me</div>
+        <AboutMe />
       </Main>
       <SideMenu />
     </>

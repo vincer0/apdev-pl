@@ -6,10 +6,10 @@ export default function HeroSection() {
       <div>
         <p className="text-xl sm:text-3xl font-thin">Hello,</p>
         <h1 className="text-3xl sm:text-6xl font-bold my-2">I&apos;m Adam</h1>
-        <h3 className="text-xl sm:text-3xl font-thin">
+        <h2 className="text-xl sm:text-3xl font-thin">
           <span className="text-secondaryText">{`<front-end />`}</span>
           developer
-        </h3>
+        </h2>
         <h3 className="text-xl sm:text-3xl font-thin pt-4">
           since <span className="text-secondaryText">{`<2018 />`}.</span>
         </h3>
