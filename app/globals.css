@@ -41,8 +41,8 @@ body {
 .content-grid,
 .full-width {
   --padding-inline: 1rem;
-  --content-max-width: 60vw;
-  --breakout-max-width: 75vh;
+  --content-max-width: 75vw;
+  --breakout-max-width: 80vw;
   --breakout-size: calc(
     (var(--breakout-max-width) - var(--content-max-width)) / 2
   );
@@ -74,12 +74,17 @@ body {
 }
 
 .apd-hero {
-  height: calc(100dvh - 56px);
+  min-height: calc(100dvh - 56px);
 }
 
 .bouncy-link:hover {
   animation: scale 0.2s;
   animation-fill-mode: forwards;
+}
+
+.apd-menu-item > svg,
+.apd-menu-item > div:first-child > svg {
+  fill: #616161;
 }
 
 @layer utilities {
