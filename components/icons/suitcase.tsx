@@ -1,11 +1,10 @@
-export default function Suitcase() {
+export default function Suitcase(props: IconProps) {
   return (
     <svg
-      width="96"
-      height="96"
       viewBox="0 0 96 96"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path d="M80 24C82.32 24 84.2 24.8 85.68 26.36C87.2 28 88 29.8 88 32V76C88 78.2 87.2 80 85.68 81.64C84.2 83.2 82.32 84 80 84H16C13.68 84 11.8 83.2 10.32 81.64C8.8 80 8 78.2 8 76V32C8 29.8 8.8 28 10.32 26.36C11.8 24.8 13.68 24 16 24H32V16C32 13.68 32.8 11.8 34.32 10.32C35.8 8.8 37.68 8 40 8H56C58.32 8 60.2 8.8 61.68 10.32C63.2 11.8 64 13.68 64 16V24H80ZM16 32V76H80V32H16ZM56 24V16H40V24H56Z" />
     </svg>

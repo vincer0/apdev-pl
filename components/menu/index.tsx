@@ -4,7 +4,12 @@ import { EduHat, CodeSheet, Suitcase, Person } from "../icons";
 export default function Menu() {
   return (
     <div className="flex gap-4 items-center flex-wrap justify-around basis-1/2">
-      <LinkButton href="#about-me" label="About Me" icon={Person} />
+      <LinkButton
+        href="#about-me"
+        label="About Me"
+        icon={Person}
+        className="max-w-[140px]"
+      />
       <LinkButton
         href="#experience"
         label="Experience & Education"
@@ -12,6 +17,7 @@ export default function Menu() {
           { id: 1, element: Suitcase },
           { id: 2, element: EduHat },
         ]}
+        className="max-w-[140px]"
       />
       <LinkButton href="#projects" label="Projects Overview" icon={CodeSheet} />
     </div>
