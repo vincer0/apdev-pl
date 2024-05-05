@@ -8,15 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      screens: {
-        md960: "960px",
-      },
       backgroundColor: {
-        secondary: "var(--color-apd-secondary-text)",
+        apdRed: "var(--color-apd-red)",
+        apdSecondaryBg: "var(--apd-secondary-bg)",
       },
       colors: {
         header: "rgb(var(--color-apd-header))",
-        secondaryText: "var(--color-apd-secondary-text)",
+        apdRed: "var(--apd-red)",
       },
     },
   },

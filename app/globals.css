@@ -15,7 +15,8 @@
   --foreground-rgb: 0, 0, 0;
   --color-apd-header: 0, 0, 0;
   --apd-main-bg: #151515;
-  --color-apd-secondary-text: #ad0000;
+  --apd-secondary-bg: #252525;
+  --apd-red: #ad0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -110,16 +111,6 @@ body {
 .apd-hero {
   min-height: calc(100dvh - 56px);
   grid-column: content;
-}
-
-.bouncy-link:hover {
-  animation: scale 0.2s;
-  animation-fill-mode: forwards;
-}
-
-.apd-menu-item > svg,
-.apd-menu-item > div:first-child > svg {
-  fill: #616161;
 }
 
 @layer utilities {
