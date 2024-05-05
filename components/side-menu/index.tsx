@@ -7,7 +7,7 @@ export default function SideMenu() {
       <ExternalLink href="https://www.github.com" icon={<Github />} />
       <ExternalLink href="https://www.linkedin.com" icon={<LinkedIn />} />
       <ExternalLink href="mailto:dev.adam.pasierb@gmail.com" icon={<Mail />} />
-      <div className="bg-secondaryText w-[1px] h-32"></div>
+      <div className="bg-apdRed w-[1px] h-32"></div>
     </div>
   );
 }

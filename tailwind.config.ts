@@ -8,8 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "475px",
+      },
       backgroundColor: {
-        apdRed: "var(--color-apd-red)",
+        apdRed: "var(--apd-red)",
         apdSecondaryBg: "var(--apd-secondary-bg)",
       },
       colors: {

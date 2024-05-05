@@ -17,7 +17,7 @@ export default function LinkButton({
 }: Props) {
   return (
     <Link href={href} className={className}>
-      <div className="w-full h-full flex flex-col items-center justify-center gap-2 md:gap-4 py-2">
+      <div className="w-full h-full flex flex-col items-center justify-center gap-2 md:gap-4 p-2">
         {Array.isArray(Icon) ? (
           <div className="flex gap-4 justify-center">
             {Icon.map(({ id, element: Icon }) => (
