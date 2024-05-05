@@ -13,7 +13,7 @@ export default function HeroSection() {
         <h3 className="flex-grow text-xl text-right md:text-left md:text-3xl font-thin">
           since <span className="text-apdRed">{`<2018 />`}.</span>
         </h3>
-        <h4 className="text-md font-bold text-center">{`Let's build something together!`}</h4>
+        <h4 className="text-md font-regular text-center">{`Let's create something together!`}</h4>
       </div>
       <Menu />
     </section>
