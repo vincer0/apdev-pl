@@ -16,7 +16,7 @@
   --color-apd-header: 0, 0, 0;
   --apd-main-bg: #151515;
   --apd-secondary-bg: #252525;
-  --apd-red: #ad0000;
+  --apd-red: #ff0000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -113,21 +113,42 @@ body {
   grid-column: content;
 }
 
+.apd-link-button {
+  position: relative;
+}
+
+.apd-link-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #616161;
+  z-index: -1;
+  border-radius: 8px;
+  transform: scale(0.99);
+  transition: transform 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.apd-link-button:hover::before {
+  transform: scale(1.02);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-@media (min-width: 1536px) {
-  /* 2xl */
+@media screen(2xl) {
+  /* uses tailwind function */
   .apd-hero {
     grid-column: feature;
   }
 }
 
-@media (min-width: 1280px) {
-  /* xl */
+@media screen(xl) {
+  /* uses tailwind function */
   .content-grid {
     --content: min(100ch, 100% - var(--gap) * 2);
   }

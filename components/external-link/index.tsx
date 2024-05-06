@@ -5,12 +5,14 @@ interface IProps {
   href: string;
   className?: string;
   onClick?: () => void;
+  ariaLabel?: string;
 }
 export default function ExternalLink({
   icon,
   href,
   className,
   onClick,
+  ariaLabel = "",
 }: IProps) {
   return (
     <a
@@ -19,6 +21,7 @@ export default function ExternalLink({
       href={href}
       target="_blank"
       rel="noreferrer"
+      aria-label={ariaLabel}
     >
       {icon}
     </a>
