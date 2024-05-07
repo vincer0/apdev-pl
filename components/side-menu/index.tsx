@@ -3,7 +3,7 @@ import { Github, LinkedIn, Mail } from "../icons";
 
 export default function SideMenu() {
   return (
-    <div className="hidden fixed bottom-0 2xl:flex flex-col justify-center items-center gap-8 left-[100px]">
+    <div className="hidden fixed bottom-0 2xl:flex flex-col justify-center items-center gap-8 left-[100px] z-[2]">
       <ExternalLink
         href="https://www.github.com"
         icon={<Github />}

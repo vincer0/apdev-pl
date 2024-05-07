@@ -13,7 +13,7 @@ export default function Menu() {
       />
       <LinkButton
         className="apd-link-button min-w-[140px] xs:w-auto flex-1 rounded-lg bg-apdSecondaryBg"
-        href="#experience"
+        href="#expedu"
         label="Experience & Education"
         icon={[
           { id: 1, element: Suitcase },

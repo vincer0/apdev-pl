@@ -5,7 +5,7 @@ interface IProps {
 }
 export default function Main({ children }: IProps) {
   return (
-    <main className="content-grid content">
+    <main className="content-grid">
       <>{children}</>
     </main>
   );
