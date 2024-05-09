@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SimpleHeading from "../simple-heading";
+import MeAndKodi from "@/public/me-and-kodi.webp";
 
 export default function AboutMe() {
   return (
@@ -16,19 +17,22 @@ export default function AboutMe() {
           </p>
           <p>Above text was generated with Tabnine free, complete bullsh*t</p>
         </div>
-        <div className="relative flex flex-1 justify-center my-10">
+        <div className="relative my-10 flex flex-1 justify-center align-center">
           <Image
-            src="/me-and-kodi.webp"
-            fill
-            alt="me and my doggo blurred"
-            className="blur-md md:blur-xl -z-[1]"
+            src={MeAndKodi}
+            alt="me and my doggo"
+            className="rounded-3xl blur-md md:blur-xl -z-[1]"
+            width={471}
+            height={646}
+            priority
           />
           <Image
-            src="/me-and-kodi.webp"
-            width="380"
-            height="555"
+            src={MeAndKodi}
             alt="me and my doggo"
-            className="rounded-3xl"
+            className="absolute rounded-3xl left-[50%] -translate-x-1/2 top-[50%] -translate-y-1/2"
+            width={421}
+            height={596}
+            priority
           />
         </div>
       </div>
