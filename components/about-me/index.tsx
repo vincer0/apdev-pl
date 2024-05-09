@@ -18,6 +18,7 @@ export default function AboutMe() {
           <p>Above text was generated with Tabnine free, complete bullsh*t</p>
         </div>
         <div className="relative my-10 flex flex-1 justify-center align-center">
+          {/* tailwind sets height: auto to <img> - nextjs dont like it */}
           <Image
             src={MeAndKodi}
             alt="me and my doggo"
