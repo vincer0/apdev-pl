@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { inter } from "@/app/fonts";
+import { montserrat } from "@/app/fonts";
 import "animate.css";
 import "./globals.css";
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-h-dvh ${inter.className}`}>{children}</body>
+      <body className={`${montserrat.className} min-h-dvh`}>{children}</body>
     </html>
   );
 }
