@@ -2,8 +2,11 @@ import clsx from "clsx";
 import React from "react";
 import SimpleHeading from "../simple-heading";
 
+// TODO make trival api
 import { timelineMock } from "../../mocks";
 
+// TODO split into smaller components
+// TODO add filtering for EDU and EXP
 const ExpEdu = () => {
   return (
     <section id="expedu" className="pb-8">
