@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --color-apd-header: 0, 0, 0;
@@ -84,23 +72,23 @@ body {
 
 .apd-link-button {
   position: relative;
-}
 
-.apd-link-button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: #616161;
-  z-index: -1;
-  border-radius: 8px;
-  transform: scale(0.99);
-  transition: transform 0.3s;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #616161;
+    z-index: -1;
+    border-radius: 8px;
+    transform: scale(0.99);
+    transition: transform 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 
-.apd-link-button:hover::before {
-  transform: scale(1.02);
+  &:hover::before {
+    transform: scale(1.02);
+  }
 }
 
 p.simple-heading::before {
@@ -110,6 +98,28 @@ p.simple-heading::before {
   width: 100%;
   height: 1px;
   background-color: var(--apd-red);
+}
+
+/*----------------------------------------------------------------
+
+Sorry tailwind
+
+----------------------------------------------------------------*/
+
+div.timeline {
+  position: relative;
+  padding: 32px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: var(--apd-red);
+    height: 100%;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+  }
 }
 
 @layer utilities {
