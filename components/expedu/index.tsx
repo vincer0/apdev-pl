@@ -16,8 +16,8 @@ const ExpEdu = () => {
           <div className="timeline-item-wrapper" key={checkpoint.id}>
             <div className={clsx("timeline-item", index % 2 === 0 && "left")}>
               <div className="timeline-item-connector">
-                <div className="dot"></div>
-                <div className="line"></div>
+                <div className="dot" />
+                <div className="line" />
               </div>
               <div className="timeline-item-details">
                 {checkpoint.type === "exp" && (
