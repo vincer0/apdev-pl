@@ -2,7 +2,8 @@ const timelineMock = [
   {
     id: 1,
     type: "exp",
-    title: "Title 1",
+    entity: "Title 1",
+    position: "Position 1",
     description: "Description 1",
     date: {
       from: "10-10-2015",
@@ -28,8 +29,8 @@ const timelineMock = [
   },
   {
     id: 2,
-    type: "eu",
-    title: "Title 1",
+    type: "edu",
+    entity: "Title 1",
     description: "Description 1",
     date: {
       from: "10-10-2015",

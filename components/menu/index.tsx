@@ -4,7 +4,7 @@ import { EduHat, CodeSheet, Suitcase, Person } from "../icons";
 // TODO probably classnames go into LinkButton
 export default function Menu() {
   return (
-    <div className="flex gap-2 md:gap-4 flex-wrap justify-center basis-1/2">
+    <nav className="flex gap-2 md:gap-4 flex-wrap justify-center basis-1/2">
       <LinkButton
         className="apd-link-button min-w-[140px] xs:w-auto flex-1 rounded-lg bg-apdSecondaryBg"
         href="#about-me"
@@ -26,6 +26,6 @@ export default function Menu() {
         label="Projects Overview"
         icon={CodeSheet}
       />
-    </div>
+    </nav>
   );
 }
