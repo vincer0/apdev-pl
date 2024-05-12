@@ -1,12 +1,14 @@
 import clsx from "clsx";
 import React from "react";
 import SimpleHeading from "../simple-heading";
+import TechIconSolver from "./timeline/tech-icon-solver";
 
 // TODO make trival api
 import { timelineMock } from "../../mocks";
 
 // TODO split into smaller components
 // TODO add filtering for EDU and EXP
+// TODO get rid of undefined properties
 const ExpEdu = () => {
   return (
     <section id="expedu" className="pb-8">
@@ -21,7 +23,17 @@ const ExpEdu = () => {
               </div>
               <div className="timeline-item-details">
                 {checkpoint.type === "exp" && (
-                  <div className="techs">Techs</div>
+                  <div className="techs">
+                    {checkpoint.techs &&
+                      checkpoint.techs.length &&
+                      checkpoint.techs.map((tech, index) => (
+                        <TechIconSolver
+                          key={index}
+                          iconKey={tech.key}
+                          techName={tech.name}
+                        />
+                      ))}
+                  </div>
                 )}
                 <small className="timeline-details-date">
                   {`${checkpoint.date.from} - ${checkpoint.date.to}`}

@@ -8,3 +8,7 @@ type IconProps = {
   //width: string;
   className?: string;
 };
+
+type Dictionary<Key extends keyof any, Value> = {
+  [key in Key]: Value;
+};

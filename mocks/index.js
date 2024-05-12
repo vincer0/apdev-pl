@@ -12,18 +12,28 @@ const timelineMock = [
     techs: [
       {
         id: 1,
-        name: "Tech 1",
-        key: "tech1",
+        name: "Docker",
+        key: "docker",
       },
       {
         id: 2,
-        name: "Tech 2",
-        key: "tech1",
+        name: "React",
+        key: "react",
       },
       {
         id: 3,
-        name: "Tech 3",
-        key: "tech1",
+        name: "Next JS",
+        key: "nextjs",
+      },
+      {
+        id: 4,
+        name: "Javascript",
+        key: "javascript",
+      },
+      {
+        id: 5,
+        name: "Symfony",
+        key: "symfony",
       },
     ],
   },

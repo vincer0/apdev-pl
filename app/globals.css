@@ -180,6 +180,8 @@ div.timeline {
     flex-direction: column;
 
     .techs {
+      display: flex;
+      gap: 16px;
       border: 1px solid var(--apd-red);
       padding: 8px 16px;
       flex: 1;
