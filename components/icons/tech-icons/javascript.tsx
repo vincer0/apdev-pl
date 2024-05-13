@@ -8,7 +8,7 @@ export default function Javascript(props: IconProps) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_1122_1191)">
+      <g clipPath="url(#clip0_1122_1191)">
         <path
           d="M0.263672 0.264038H23.7357V23.7362H0.263672V0.264038Z"
           fill="#F0DB4F"

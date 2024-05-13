@@ -8,7 +8,7 @@ export default function NextJS(props: IconProps) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_1122_1198)">
+      <g clipPath="url(#clip0_1122_1198)">
         <path
           d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
           fill="black"
@@ -31,8 +31,8 @@ export default function NextJS(props: IconProps) {
           y2="21.3999"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1122_1198"
@@ -42,8 +42,8 @@ export default function NextJS(props: IconProps) {
           y2="14.2499"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <clipPath id="clip0_1122_1198">
           <rect width="24" height="24" fill="white" />

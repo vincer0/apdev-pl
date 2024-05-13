@@ -6,9 +6,9 @@ type Props = {
 
 const SimpleHeading = ({ label }: Props) => {
   return (
-    <p className="inline-block relative simple-heading text-3xl mb-8">
+    <h3 className="inline-block relative simple-heading text-3xl mb-8">
       {label}
-    </p>
+    </h3>
   );
 };
 

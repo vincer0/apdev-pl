@@ -11,6 +11,8 @@ import Javascript from "./tech-icons/javascript";
 import NextJS from "./tech-icons/nextjs";
 import React from "./tech-icons/react";
 import Symfony from "./tech-icons/symfony";
+import Unreal from "./tech-icons/unreal";
+import CPlusPlus from "./tech-icons/cplusplus";
 
 export {
   Github,
@@ -26,4 +28,6 @@ export {
   React,
   Symfony,
   Docker,
+  Unreal,
+  CPlusPlus,
 };

@@ -5,6 +5,8 @@ import {
   NextJS,
   React as ReactIcon,
   Symfony,
+  Unreal,
+  CPlusPlus,
 } from "@/components/icons";
 
 type Props = {
@@ -18,6 +20,8 @@ const IconsDictionary: Dictionary<string, React.ReactElement> = {
   nextjs: <NextJS />,
   react: <ReactIcon />,
   symfony: <Symfony />,
+  unreal: <Unreal />,
+  cplusplus: <CPlusPlus />,
 };
 
 const TechIconSolver = ({ iconKey, techName }: Props) => {

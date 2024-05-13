@@ -9,6 +9,7 @@ import { timelineMock } from "../../mocks";
 // TODO split into smaller components
 // TODO add filtering for EDU and EXP
 // TODO get rid of undefined properties
+// TODO better semantic
 const ExpEdu = () => {
   return (
     <section id="expedu" className="pb-8">
@@ -22,27 +23,25 @@ const ExpEdu = () => {
                 <div className="line" />
               </div>
               <div className="timeline-item-details">
-                {checkpoint.type === "exp" && (
+                {checkpoint.techs && checkpoint.techs.length && (
                   <div className="techs">
-                    {checkpoint.techs &&
-                      checkpoint.techs.length &&
-                      checkpoint.techs.map((tech, index) => (
-                        <TechIconSolver
-                          key={index}
-                          iconKey={tech.key}
-                          techName={tech.name}
-                        />
-                      ))}
+                    {checkpoint.techs.map((tech, index) => (
+                      <TechIconSolver
+                        key={index}
+                        iconKey={tech.key}
+                        techName={tech.name}
+                      />
+                    ))}
                   </div>
                 )}
-                <small className="timeline-details-date">
-                  {`${checkpoint.date.from} - ${checkpoint.date.to}`}
-                </small>
                 <div className="timeline-details-title">
                   {checkpoint.entity}
                 </div>
+                <div className="timeline-details-date">
+                  {`${checkpoint.date.from} - ${checkpoint.date.to}`}
+                </div>
                 {checkpoint.type === "exp" && (
-                  <div className="timeline-details-title">
+                  <div className="timeline-details-position">
                     {checkpoint.position}
                   </div>
                 )}

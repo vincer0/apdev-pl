@@ -91,7 +91,7 @@ body {
   }
 }
 
-p.simple-heading::before {
+.simple-heading::before {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -184,9 +184,18 @@ div.timeline {
       gap: 16px;
       border: 1px solid var(--apd-red);
       padding: 8px 16px;
-      flex: 1;
       background-color: #531212;
       border-radius: 20px;
+    }
+
+    .timeline-details-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 21px;
+    }
+
+    .timeline-details-date {
+      font-weight: bold;
     }
   }
 
