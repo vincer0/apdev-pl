@@ -2,7 +2,8 @@ const timelineMock = [
   {
     id: 1,
     type: "edu",
-    entity: "Unreal Engine 5 Bootcamp",
+    position: "Unreal Engine 5 Bootcamp",
+    entity: "Laba - l-a-b-a.pl",
     description: `Game-dev is one of my hobbies. This bootcamp covers everything about games development with UE5.
     It starts from C++ language learning module. However, some of the bootcamp students are highy skilled in C++ willing to learn more about UE5.
     This course ends with internal game jam where teams are going to present their game made during bootcamp. Being a part of the bootcamp gives me opportunity to not only gain deeper knowledge
@@ -27,12 +28,12 @@ const timelineMock = [
   {
     id: 2,
     type: "exp",
-    entity: "Title 1",
-    position: "Position 1",
+    entity: "Praetorian Technology",
+    position: "Web Developer",
     description: "Description 1",
     date: {
-      from: "10-10-2015",
-      to: "10-10-2015",
+      from: "10.2021",
+      to: "TODAY",
     },
     techs: [
       {
@@ -64,13 +65,87 @@ const timelineMock = [
   },
   {
     id: 3,
-    type: "edu",
-    entity: "Title 1",
+    type: "exp",
+    entity: "Digital Holding",
+    position: "Frond-end developer",
     description: "Description 1",
     date: {
-      from: "10-10-2015",
-      to: "10-10-2015",
+      from: "03-2021",
+      to: "10-2021",
     },
+    techs: [
+      {
+        id: 1,
+        name: "Vue.js",
+        key: "vuejs",
+      },
+      {
+        id: 2,
+        name: "Javascript",
+        key: "javascript",
+      },
+      {
+        id: 3,
+        name: "Figma",
+        key: "figma",
+      },
+    ],
+  },
+  {
+    id: 4,
+    type: "exp",
+    entity: "Meelabs Polska",
+    position: "Frond-end developer",
+    description: "Description 1",
+    date: {
+      from: "08-2020",
+      to: "03-2021",
+    },
+    techs: [
+      {
+        id: 1,
+        name: "React",
+        key: "react",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+        key: "typescript",
+      },
+      {
+        id: 3,
+        name: "Gatsby",
+        key: "gatsby",
+      },
+    ],
+  },
+  {
+    id: 5,
+    type: "edu",
+    entity: "Software Development Academy",
+    position: "Java Bootcamp Student",
+    description: "Description 1",
+    date: {
+      from: "03-2020",
+      to: "02-2021",
+    },
+    techs: [
+      {
+        id: 1,
+        name: "Java",
+        key: "java",
+      },
+      {
+        id: 2,
+        name: "Spring",
+        key: "spring",
+      },
+      {
+        id: 3,
+        name: "Maven",
+        key: "maven",
+      },
+    ],
   },
 ];
 

@@ -142,6 +142,10 @@ div.timeline {
       & > div {
         text-align: end;
       }
+
+      .timeline-details-techs {
+        align-self: flex-end;
+      }
     }
 
     .timeline-item-connector {
@@ -179,16 +183,17 @@ div.timeline {
     gap: 8px;
     flex-direction: column;
 
-    .techs {
+    .timeline-details-techs {
       display: flex;
       gap: 16px;
       border: 1px solid var(--apd-red);
       padding: 8px 16px;
       background-color: #531212;
       border-radius: 20px;
+      width: fit-content;
     }
 
-    .timeline-details-title {
+    .timeline-details-position {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 21px;

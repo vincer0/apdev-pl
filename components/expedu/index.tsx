@@ -24,7 +24,7 @@ const ExpEdu = () => {
               </div>
               <div className="timeline-item-details">
                 {checkpoint.techs && checkpoint.techs.length && (
-                  <div className="techs">
+                  <div className="timeline-details-techs">
                     {checkpoint.techs.map((tech, index) => (
                       <TechIconSolver
                         key={index}
@@ -34,17 +34,15 @@ const ExpEdu = () => {
                     ))}
                   </div>
                 )}
-                <div className="timeline-details-title">
-                  {checkpoint.entity}
+                <div className="timeline-details-position">
+                  {checkpoint.position}
                 </div>
                 <div className="timeline-details-date">
                   {`${checkpoint.date.from} - ${checkpoint.date.to}`}
                 </div>
-                {checkpoint.type === "exp" && (
-                  <div className="timeline-details-position">
-                    {checkpoint.position}
-                  </div>
-                )}
+                <div className="timeline-details-entity">
+                  {checkpoint.entity}
+                </div>
                 <div className="timeline-details-description">
                   {checkpoint.description}
                 </div>

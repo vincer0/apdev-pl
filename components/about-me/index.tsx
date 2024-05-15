@@ -1,6 +1,6 @@
 import Image from "next/image";
 import SimpleHeading from "../simple-heading";
-import MeAndKodi from "@/public/me-and-kodi.webp";
+import JustMe from "@/public/just-mex.webp";
 
 export default function AboutMe() {
   return (
@@ -20,7 +20,7 @@ export default function AboutMe() {
         <div className="relative my-10 flex flex-1 justify-center align-center">
           {/* tailwind sets height: auto to <img> - nextjs dont like it */}
           <Image
-            src={MeAndKodi}
+            src={JustMe}
             alt="me and my doggo"
             className="rounded-3xl blur-md md:blur-xl -z-[1]"
             width={471}
@@ -28,7 +28,7 @@ export default function AboutMe() {
             priority
           />
           <Image
-            src={MeAndKodi}
+            src={JustMe}
             alt="me and my doggo"
             className="absolute rounded-3xl left-[50%] -translate-x-1/2 top-[50%] -translate-y-1/2"
             width={421}

@@ -7,6 +7,15 @@ import {
   Symfony,
   Unreal,
   CPlusPlus,
+  VueJs,
+  Figma,
+  Typescript,
+  Gatsby,
+  Php,
+  Laravel,
+  Java,
+  Spring,
+  Maven,
 } from "@/components/icons";
 
 type Props = {
@@ -22,10 +31,21 @@ const IconsDictionary: Dictionary<string, React.ReactElement> = {
   symfony: <Symfony />,
   unreal: <Unreal />,
   cplusplus: <CPlusPlus />,
+  vuejs: <VueJs />,
+  figma: <Figma />,
+  typescript: <Typescript />,
+  gatsby: <Gatsby />,
+  php: <Php />,
+  laravel: <Laravel />,
+  java: <Java />,
+  spring: <Spring />,
+  maven: <Maven />,
 };
 
 const TechIconSolver = ({ iconKey, techName }: Props) => {
-  return <div title={techName}>{IconsDictionary[iconKey]}</div>;
+  return IconsDictionary[iconKey] ? (
+    <div title={techName}>{IconsDictionary[iconKey]}</div>
+  ) : null;
 };
 
 export default TechIconSolver;
