@@ -1,9 +1,18 @@
+import Image from "next/image";
 import Menu from "../menu";
+import MeAndMountains from "@/public/me-and-mountains-flipped.webp";
 
 export default function HeroSection() {
   return (
-    <section className="apd-hero flex flex-col pt-8 pb-4">
-      <div className="flex flex-col basis-1/2 pb-4">
+    <section className="full relative apd-hero flex flex-col pt-8 pb-4">
+      <Image
+        alt="hero section background image"
+        aria-hidden="true"
+        src={MeAndMountains}
+        fill
+        className="full object-cover opacity-15"
+      />
+      <div className="content flex flex-col basis-1/2 pb-4">
         <p className="text-xl md:text-3xl font-thin">Hello,</p>
         <hgroup>
           <h1 className="text-3xl md:text-6xl font-bold my-2">I&apos;m Adam</h1>
