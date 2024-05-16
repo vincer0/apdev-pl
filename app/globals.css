@@ -67,7 +67,11 @@ body {
 }
 
 .apd-hero {
-  /*min-height: calc(100dvh - 56px);  IT IS JUMPY ON IOS WHEN ADDRESS BAR HIDES, THEN IT RECALCULATES 100dvh without address bar */
+  /**
+  * dvh => calculates address bar etc - looks nice but jumpy on iOS when address bar hides
+  * vh => not jumpy but address bar hides a button
+  */
+  /*min-height: calc(100dvh - 56px); */
   min-height: calc(100vh - 56px);
 }
 
