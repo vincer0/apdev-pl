@@ -67,7 +67,8 @@ body {
 }
 
 .apd-hero {
-  min-height: calc(100dvh - 56px);
+  /*min-height: calc(100dvh - 56px);  IT IS JUMPY ON IOS WHEN ADDRESS BAR HIDES, THEN IT RECALCULATES 100dvh without address bar */
+  min-height: calc(100vh - 56px);
 }
 
 .apd-link-button {
@@ -221,6 +222,10 @@ div.timeline {
       .timeline-item-details {
         & > div {
           text-align: start;
+        }
+
+        .timeline-details-techs {
+          align-self: flex-start;
         }
       }
 
