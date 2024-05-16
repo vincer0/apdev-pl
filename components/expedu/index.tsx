@@ -12,7 +12,7 @@ import { timelineMock } from "../../mocks";
 // TODO better semantic
 const ExpEdu = () => {
   return (
-    <section id="expedu" className="pb-8">
+    <section id="expedu" className="py-12">
       <SimpleHeading label="Experience and Education" />
       <div className="timeline">
         {timelineMock.map((checkpoint, index) => (

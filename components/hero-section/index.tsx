@@ -4,13 +4,14 @@ import MeAndMountains from "@/public/me-and-mountains-flipped.webp";
 
 export default function HeroSection() {
   return (
-    <section className="full relative apd-hero flex flex-col pt-8 pb-4">
+    <section className="apd-hero full relative flex flex-col pt-8 pb-4">
       <Image
         alt="hero section background image"
         aria-hidden="true"
         src={MeAndMountains}
         fill
-        className="full object-cover opacity-15"
+        className="full object-cover opacity-15 -z-[1]"
+        priority
       />
       <div className="content flex flex-col basis-1/2 pb-4">
         <p className="text-xl md:text-3xl font-thin">Hello,</p>

@@ -21,11 +21,11 @@ export default function LinkButton({
         {Array.isArray(Icon) ? (
           <div className="flex gap-4 justify-center">
             {Icon.map(({ id, element: Icon }) => (
-              <Icon key={id} className="h-8 md:h-24 fill-[#616161]" />
+              <Icon key={id} className="h-8 md:h-24 fill-[white]" />
             ))}
           </div>
         ) : (
-          Icon && <Icon className="h-8 md:h-24 fill-[#616161]" />
+          Icon && <Icon className="h-8 md:h-24 fill-[white]" />
         )}
         <div className="flex flex-col justify-center items-center">
           <span className="text-sm md:text-2xl uppercase text-center">
