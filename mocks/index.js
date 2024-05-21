@@ -187,7 +187,7 @@ const timelineMock = [
   },
   {
     id: 7,
-    type: "edu",
+    type: "exp",
     entity: "Gryfer",
     position: "Web Developer",
     description: "Description TBD",

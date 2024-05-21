@@ -4,7 +4,7 @@
  * 1. because why not
  * 2. TODO tree extension for vs code works nice
  */
-
+// TODO moooore ts
 // TODO return types of components
 // TODO consider rafce components
 // TODO message of the day / your rick and morty character of the day
