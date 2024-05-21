@@ -147,6 +147,104 @@ const timelineMock = [
       },
     ],
   },
+  {
+    id: 6,
+    type: "exp",
+    entity: "Let Grow",
+    position: "Web Developer",
+    description: "Description TBD",
+    date: {
+      from: "04-2019",
+      to: "08-2020",
+    },
+    techs: [
+      {
+        id: 1,
+        name: "Vue",
+        key: "vuejs",
+      },
+      {
+        id: 2,
+        name: "React",
+        key: "react",
+      },
+      {
+        id: 3,
+        name: "Laravel",
+        key: "laravel",
+      },
+      {
+        id: 4,
+        name: "PHP",
+        key: "php",
+      },
+      {
+        id: 5,
+        name: "Figma",
+        key: "figma",
+      },
+    ],
+  },
+  {
+    id: 7,
+    type: "edu",
+    entity: "Gryfer",
+    position: "Web Developer",
+    description: "Description TBD",
+    date: {
+      from: "10-2018",
+      to: "04-2019",
+    },
+    techs: [
+      {
+        id: 1,
+        name: "Vue",
+        key: "vuejs",
+      },
+      {
+        id: 2,
+        name: "React",
+        key: "react",
+      },
+      {
+        id: 3,
+        name: "Laravel",
+        key: "laravel",
+      },
+      {
+        id: 4,
+        name: "PHP",
+        key: "php",
+      },
+      {
+        id: 5,
+        name: "Figma",
+        key: "figma",
+      },
+    ],
+  },
+  {
+    id: 8,
+    type: "edu",
+    entity: "West Pomeranian University of Technology in Szczecin",
+    position: "ICT - Masters Degree",
+    description: "Description TBD",
+    date: {
+      from: "2017",
+      to: "20218",
+    },
+  },
+  {
+    id: 9,
+    type: "edu",
+    entity: "West Pomeranian University of Technology in Szczecin",
+    position: "ICT - Bachelor Degree",
+    description: "Description TBD",
+    date: {
+      from: "2013",
+      to: "20217",
+    },
+  },
 ];
 
 export { timelineMock };

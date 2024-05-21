@@ -7,6 +7,7 @@
 
 // TODO return types of components
 // TODO consider rafce components
+// TODO message of the day / your rick and morty character of the day
 
 import {
   Header,

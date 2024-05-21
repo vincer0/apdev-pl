@@ -1,3 +1,5 @@
+"use client";
+
 import clsx from "clsx";
 import React from "react";
 import SimpleHeading from "../simple-heading";
@@ -9,11 +11,40 @@ import { timelineMock } from "../../mocks";
 // TODO split into smaller components
 // TODO add filtering for EDU and EXP
 // TODO get rid of undefined properties
+// TODO if someone uchecks all filters - show -> "Without experience and education you will achieve nothing" ~Adam
 // TODO better semantic
 const ExpEdu = () => {
   return (
     <section id="expedu" className="py-12">
       <SimpleHeading label="Experience and Education" />
+      <p className="text-center">
+        Use filters to better show you what interests you most:
+      </p>
+      <div className="flex justify-center align-center gap-8">
+        <label htmlFor="exp">
+          <input
+            type="checkbox"
+            id="exp"
+            name="exp"
+            value="exp"
+            onChange={() => {}}
+            className="mr-2"
+          />
+          Experience
+        </label>
+        <label htmlFor="edu">
+          <input
+            type="checkbox"
+            id="edu"
+            name="edu"
+            value="edu"
+            onChange={() => {}}
+            checked
+            className="mr-2"
+          />
+          Education
+        </label>
+      </div>
       <div className="timeline">
         {timelineMock.map((checkpoint, index) => (
           <div className="timeline-item-wrapper" key={checkpoint.id}>
