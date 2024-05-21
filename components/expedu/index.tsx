@@ -66,7 +66,7 @@ const ExpEdu = () => {
       </div>
       {checkboxes.length > 0 ? (
         <div className="timeline">
-          {filtered.map((checkpoint, index) => (
+          {filtered.map((checkpoint: any, index: any) => (
             <div className="timeline-item-wrapper" key={checkpoint.id}>
               <div className={clsx("timeline-item", index % 2 === 0 && "left")}>
                 <div className="timeline-item-connector">
@@ -76,7 +76,7 @@ const ExpEdu = () => {
                 <div className="timeline-item-details">
                   {checkpoint.techs && checkpoint.techs.length && (
                     <div className="timeline-details-techs">
-                      {checkpoint.techs.map((tech, index) => (
+                      {checkpoint.techs.map((tech: any, index: number) => (
                         <TechIconSolver
                           key={index}
                           iconKey={tech.key}
