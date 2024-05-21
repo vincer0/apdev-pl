@@ -13,21 +13,25 @@ export default function HeroSection() {
         className="full object-cover opacity-15 -z-[1]"
         priority
       />
-      <div className="content flex flex-col basis-1/2 pb-4">
+      <div className="content flex flex-col pb-4 justify-center">
         <p className="text-xl md:text-3xl font-thin">Hello,</p>
         <hgroup>
           <h1 className="text-3xl md:text-6xl font-bold my-2">I&apos;m Adam</h1>
-          <h2 className="text-xl text-center xs:text-left mb-2 md:mb-0 md:text-left md:text-3xl font-thin">
+          <h2 className="text-xl text-center xs:text-left mb-2 md:mb-0 md:text-left md:text-3xl">
             <span className="text-apdRed">{`<front-end /> `}</span>
             developer
           </h2>
-          <h3 className="flex-grow text-xl text-right xs:text-left md:text-left md:text-3xl font-thin">
+          <h3 className="text-xl text-right xs:text-left md:text-left md:text-3xl">
             since <span className="text-apdRed">{`<2018 />`}.</span>
           </h3>
         </hgroup>
-        <p className="text-md font-regular text-center md:text-3xl">
-          <q>{`Let's create something together!`}</q>
-        </p>
+        <center className="flex items-center justify-center flex-grow text-md md:text-3xl tracking-none md:tracking-[8px] uppercase">
+          <h3>
+            {`Let's `}
+            <span className="text-apdRed">{` create `}</span>
+            <span>something together!</span>
+          </h3>
+        </center>
       </div>
       <Menu />
     </section>
